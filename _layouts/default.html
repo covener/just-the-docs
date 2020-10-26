@@ -58,6 +58,7 @@ layout: table_wrappers
             {% if collections_size > 1 %}
               <div class="nav-category">{{ collection_value.name }}</div>
             {% endif %}
+      <!-- covdebug: including {{collection}} -->
             {% include nav.html pages=collection %}
           {% endif %}
         {% endfor %}
