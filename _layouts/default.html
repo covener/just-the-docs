@@ -138,11 +138,11 @@ layout: table_wrappers
         {% else %}
             
         Table of Contents
-        include toc.html html=content
+        {% include toc.html html=content %}
         <hr/>
        
             <div id="markdown-content-container">
-               include anchor_headings.html html=content anchorBody="#" 
+               {% include anchor_headings.html html=content anchorBody="#" %} 
             </DIV>
         {% endif %}
 
